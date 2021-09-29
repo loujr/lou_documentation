@@ -11,13 +11,16 @@ We have already covered this step in our previous article. If you do not have Do
 **Add Apache Ports to Firewall D**
 
 You can do this by adding port 80 as seen here:
-|``firewall-cmd --permanent --zone=public --add-port=80/tcp --permanent``
+
+``firewall-cmd --permanent --zone=public --add-port=80/tcp --permanent``
 
 Or you can add http as a service: 
-|``firewall-cmd --permanent --zone= --add-service=http --permanent``
+
+``firewall-cmd --permanent --zone= --add-service=http --permanent``
 
 After adding Apache you will need to restart FirewallD, you can do this by running:
-|``firewall-cmd --reload``
+
+``firewall-cmd --reload``
 
 
 Step 1: Pull an Apache Image from Docker
@@ -71,8 +74,9 @@ This is a rather uncommon issue, but during testing this error was found
 
 If the following error occurs, you will need to flush your IP tables:
 
-|``sudo iptables -t filter -F``
-|``sudo iptables -t filter -X``
+``sudo iptables -t filter -F``
+
+``sudo iptables -t filter -X``
 
 
 Congratulations on running your apache container within Docker, hopefully you have gotten alot of value from this guide. If you have any questions or comments, feel free to reach out to me on LinkedIn. 
