@@ -49,9 +49,12 @@ After we have successfully pulled a Docker image to use locally, the next step i
 
 <photo-docker-run-container-httpd>
 
-The ``-i`` flag means that the mode is interactive, ie. you can enter commands into it :raw-html:`<br />`
-The ``-t`` flag includes a terminal, this allows you the same ability as if you ssh'ed into the container :raw-html:`<br />`
-The ``-d`` flag detaches, this allows you to run the container in the background :raw-html:`<br />`
+The ``-i`` flag means that the mode is interactive, ie. you can enter commands into it 
+
+The ``-t`` flag includes a terminal, this allows you the same ability as if you ssh'ed into the container 
+
+The ``-d`` flag detaches, this allows you to run the container in the background 
+
 The ``-p`` flag specifies the port, in this particular case we want to make sure our container port forwards to the same port on our server. The first 80 specifies your server port, the second 80 belongs to the apache container.
 
 six_apache is the name that we assigned to the container for this example, you can keep it blank if you desire and Docker will assign a random name to the container or assign your own name.
