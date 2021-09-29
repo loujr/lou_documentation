@@ -55,6 +55,7 @@ After we have successfully pulled a Docker image to use locally, the next step i
 
 | The ``-p`` flag specifies the port, in this particular case we want to make sure our container port forwards to the same port on our server. The first 80 specifies your server port, the second 80 belongs to the apache container.
 
+
 six_apache is the name that we assigned to the container for this example, you can keep it blank if you desire and Docker will assign a random name to the container or assign your own name.
 
 
