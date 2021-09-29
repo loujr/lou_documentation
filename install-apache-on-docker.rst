@@ -6,7 +6,7 @@ Prerequisites:
 ~~~~~~~~~~~~~~ 
 **Install Docker**
 
-We have already covered this step in our previous article. If you do not have Docker setup, please consult the following article: `Here <https://blog.6servers.com/2021/09/23/how-to-install-docker-on-centos-8/>`
+We have already covered this step in our previous article. If you do not have Docker setup, please consult the following article: `Here <https://blog.6servers.com/2021/09/23/how-to-install-docker-on-centos-8/>`_
 
 **Add Apache Ports to Firewall D**
 
@@ -23,7 +23,7 @@ After adding Apache you will need to restart FirewallD, you can do this by runni
 Step 1: Pull an Apache Image from Docker
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Docker contains many different standard containers including Apache. In order set up an Apache container in Docker, we are going to pull an image from Docker Hub that we can use locally. For more information on the specific container that we will be using consult: `Docker Hub <https://hub.docker.com/_/httpd/>`
+Docker contains many different standard containers including Apache. In order set up an Apache container in Docker, we are going to pull an image from Docker Hub that we can use locally. For more information on the specific container that we will be using consult: `Docker Hub <https://hub.docker.com/_/httpd/>`_
 
 ``docker pull httpd``
 
