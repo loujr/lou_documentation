@@ -4,13 +4,11 @@ Setting up an Apache Container on Docker with CentOS 8
 
 Prerequisites:
 ~~~~~~~~~~~~~~ 
-Install Docker
-~~~~~~~~~~~~~~
+**Install Docker**
 
 We have already covered this step in our previous article. If you do not have Docker setup, please consult the following article: `Here <https://blog.6servers.com/2021/09/23/how-to-install-docker-on-centos-8/>`
 
-Add Apache Ports to Firewall D
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Add Apache Ports to Firewall D**
 
 You can do this by adding port 80 as seen here:
 ``firewall-cmd --permanent --zone=public --add-port=80/tcp --permanent``
