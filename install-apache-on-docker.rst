@@ -71,6 +71,7 @@ This is a rather uncommon issue, but during testing this error was found
 If the following error occurs, you will need to flush your IP tables:
 
 ``sudo iptables -t filter -F``
+
 ``sudo iptables -t filter -X``
 
 
