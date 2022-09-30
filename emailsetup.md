@@ -1,0 +1,33 @@
+## How to Setup Purelymail Email
+
+### I do own the email onyxmail.net but I am using a new email provider and additional configuration might be necessary. Go to `settings` >> `mail` >> `accounts`.
+
+
+### Use the following email description - you can put any name too. It will show up on all your email messages.
+
+
+![IMG_2071](https://user-images.githubusercontent.com/61295275/193166559-6ee98359-83f6-4190-872b-7a183ea9a09c.jpg)
+
+
+### The following are the setup options after clicking next. You need to put the password for both the incoming and outgoing server.
+
+
+
+![IMG_2070 2](https://user-images.githubusercontent.com/61295275/193166571-c90fc0cc-09c2-4d83-b724-44d4b8694d5c.jpg)
+
+
+### Setting up your mailbox! Sometimes email gets delivered to a seperate folder - I added sample emails to each email folder to avoid that but here's how to solve it
+
+### Go to your newly setup email account and then click advanced
+
+
+![IMG_2072](https://user-images.githubusercontent.com/61295275/193167837-c46ab78d-b47c-4adc-9a73-31eb011c54ae.jpg)
+
+
+
+### For mailbox behaviors double check that drafts, sent, trash, archive - and discarded messages line up --> choose `on server` not phone
+
+
+![IMG_2074](https://user-images.githubusercontent.com/61295275/193168193-5e0103d7-a0f3-41ec-aa0b-76e799901858.jpg)
+
+
