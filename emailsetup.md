@@ -6,7 +6,7 @@
 ### Use the following email description - you can put any name too. It will show up on all your email messages.
 
 
-![IMG_2071](https://user-images.githubusercontent.com/61295275/193166559-6ee98359-83f6-4190-872b-7a183ea9a09c.jpg)
+![IMG_2070 2](https://user-images.githubusercontent.com/61295275/193169753-d6865ee2-e36e-42ac-a31b-b32b3b3491eb.jpg)
 
 
 ### The following are the setup options after clicking next. You need to put the password for both the incoming and outgoing server.
