@@ -21,7 +21,7 @@
 ### Go to your newly setup email account and then click advanced
 
 
-![IMG_2072](https://user-images.githubusercontent.com/61295275/193167837-c46ab78d-b47c-4adc-9a73-31eb011c54ae.jpg)
+![IMG_2075](https://user-images.githubusercontent.com/61295275/193169398-c0ea82db-9abb-4219-a7e4-d8a7856af39c.jpg)
 
 
 
