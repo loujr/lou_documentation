@@ -13,7 +13,7 @@
 
 
 
-![IMG_2070 2](https://user-images.githubusercontent.com/61295275/193166571-c90fc0cc-09c2-4d83-b724-44d4b8694d5c.jpg)
+![IMG_2075](https://user-images.githubusercontent.com/61295275/193169398-c0ea82db-9abb-4219-a7e4-d8a7856af39c.jpg)
 
 
 ### Setting up your mailbox! Sometimes email gets delivered to a seperate folder - I added sample emails to each email folder to avoid that but here's how to solve it
@@ -21,7 +21,7 @@
 ### Go to your newly setup email account and then click advanced
 
 
-![IMG_2075](https://user-images.githubusercontent.com/61295275/193169398-c0ea82db-9abb-4219-a7e4-d8a7856af39c.jpg)
+![IMG_2072](https://user-images.githubusercontent.com/61295275/193169554-47686c89-7a1d-4d60-81a8-ae6cf77996e3.jpg)
 
 
 
