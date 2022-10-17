@@ -85,7 +85,9 @@ I am going to provide the following examples for navigation with before and afte
 
 To get the link header for your organization, you need to make an API call. For this example I used:
 
+```
 curl -I -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ghp_*****j8fq"   https://api.github.com/enterprises/advacado-corp/audit-log
+```
 
 This provided me with the following output:
 
