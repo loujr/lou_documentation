@@ -123,8 +123,12 @@ x-github-request-id: C985:4933:1054293:2175681:634D7198
 
 The important part of the output here is the link this link needs to be generated rather than manually imputed. Copy the entire link into the following output and specify the number of pages, in this example I chose 50:
 
+```
 curl -i -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ghp_*****j8fq" https://api.github.com/enterprises/13827/audit-log?after=MS42NjQzODM5MTkzNDdlKzEyfDM0MkI6NDdBNDo4RTFGMEM6NUIyQkZCMzo2MzM0N0JBRg%3D%3D&before=>&per_page=50
+```
 
 This will generate a page with 50 items, but it will also generate a new link in the header that creates the next page of information for you to parse through.
 
+```
 link: <https://api.github.com/enterprises/13827/audit-log?after=MS42NjQzODMzMzk2MzZlKzEyfFdxSzIxdGU0MlBWNUp5UzhBWDF6LWc%3D&before=>; rel="next", <https://api.github.com/enterprises/13827/audit-log?after=&before=>; rel="first", <https://api.github.com/enterprises/13827/audit-log?after=&before=MS42NjQzODM5MTcyMjllKzEyfDI4NDE6NEVFNDoxODBDRkM5OjY5REE0MzI6NjMzNDdCQUQ%3D>; rel="prev"
+```
