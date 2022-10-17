@@ -15,8 +15,8 @@ Be sure to read the documentation on how to handle paginated results for specifi
 
 Pagination begins at [header of the request](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api#about-the-response-code-and-headers). The following is an example of an authenticated curl request to view the audit log of our organization:
 
-```
-curl -I -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ghp_*****j8fq"   https://api.github.com/enterprises/advacado-corp/audit-log
+```shell 
+$ curl -I -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ghp_*****j8fq"   https://api.github.com/enterprises/advacado-corp/audit-log
 
 ```
 
@@ -73,6 +73,28 @@ This is an example of a Link Header that uses `page`. Notice that instead of bei
 
 ### Navigating through the pages
 
+There are two ways of Navigation using pagination. This will depend on the output of your Link Header. `before=` indicates that your pagination terms use `before` and `after`. `page=` indicates that you will be using `page`. 
+
+
+#### Before and After
+
+To navigate using `before` and `after`. Copy the Link Header generated above into your `curl` request:
+
+```
+curl -i -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ghp_*****j8fq" https://api.github.com/enterprises/13827/audit-log?after=MS42NjQzODM5MTkzNDdlKzEyfDM0MkI6NDdBNDo4RTFGMEM6NUIyQkZCMzo2MzM0N0JBRg%3D%3D&before=>&per_page=50
+```
+
+This will generate a page of 50 items and new header information that you can use to make the next request. The important part of the output here is the Link Header needs to be generated rather than manually imputed. Copy the entire link into the following output and specify the number of pages, in this example I chose 50 
+
+```
+link: <https://api.github.com/enterprises/13827/audit-log?after=MS42NjQzODMzMzk2MzZlKzEyfFdxSzIxdGU0MlBWNUp5UzhBWDF6LWc%3D&before=>; rel="next", <https://api.github.com/enterprises/13827/audit-log?after=&before=>; rel="first", <https://api.github.com/enterprises/13827/audit-log?after=&before=MS42NjQzODM5MTcyMjllKzEyfDI4NDE6NEVFNDoxODBDRkM5OjY5REE0MzI6NjMzNDdCQUQ%3D>; rel="prev"
+```
+
+`rel="next"` provides the next 50 items of results.
+`rel="prev"` provides the previous 50 items of results.
+
+#### Page
+
 Now that you know how many pages there are to receive, you can start navigating
 through the pages to consume the results. You do this by passing in a `page`
 parameter. By default, `page` always starts at `1`. Let's jump ahead to page 14
@@ -114,27 +136,3 @@ is now 20. This is because we are asking for more information per page about
 our results.
 
 
-
-
-
-I am going to provide the following examples for navigation with before and after using pagination. It is important to note that the API calls I am making are custom to my organization and will need to be tweaked for your use case.
-
-
-To get the link header for your organization, you need to make an API call. For this example I used:
-
-
-
-This provided me with the following output:
-
-
-The important part of the output here is the link this link needs to be generated rather than manually imputed. Copy the entire link into the following output and specify the number of pages, in this example I chose 50:
-
-```
-curl -i -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ghp_*****j8fq" https://api.github.com/enterprises/13827/audit-log?after=MS42NjQzODM5MTkzNDdlKzEyfDM0MkI6NDdBNDo4RTFGMEM6NUIyQkZCMzo2MzM0N0JBRg%3D%3D&before=>&per_page=50
-```
-
-This will generate a page with 50 items, but it will also generate a new link in the header that creates the next page of information for you to parse through.
-
-```
-link: <https://api.github.com/enterprises/13827/audit-log?after=MS42NjQzODMzMzk2MzZlKzEyfFdxSzIxdGU0MlBWNUp5UzhBWDF6LWc%3D&before=>; rel="next", <https://api.github.com/enterprises/13827/audit-log?after=&before=>; rel="first", <https://api.github.com/enterprises/13827/audit-log?after=&before=MS42NjQzODM5MTcyMjllKzEyfDI4NDE6NEVFNDoxODBDRkM5OjY5REE0MzI6NjMzNDdCQUQ%3D>; rel="prev"
-```
