@@ -75,3 +75,56 @@ Notice what it does to the header response:
 As you might have guessed, the `rel="last"` information says that the last page
 is now 20. This is because we are asking for more information per page about
 our results.
+
+
+
+
+
+I am going to provide the following examples for navigation with before and after using pagination. It is important to note that the API calls I am making are custom to my organization and will need to be tweaked for your use case.
+
+
+To get the link header for your organization, you need to make an API call. For this example I used:
+
+curl -I -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ghp_*****j8fq"   https://api.github.com/enterprises/advacado-corp/audit-log
+
+This provided me with the following output:
+
+```
+HTTP/2 200 
+server: GitHub.com
+date: Mon, 17 Oct 2022 15:15:37 GMT
+content-type: application/json; charset=utf-8
+content-length: 20854
+cache-control: private, max-age=60, s-maxage=60
+vary: Accept, Authorization, Cookie, X-GitHub-OTP
+etag: "fc5b15308c775934ca63719ff22d9fe623e7e8226235181203424347cec50130"
+x-oauth-scopes: admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, admin:ssh_signing_key, codespace, delete:packages, delete_repo, gist, notifications, project, repo, user, workflow, write:discussion, write:packages
+x-accepted-oauth-scopes: admin:enterprise
+github-authentication-token-expiration: 2022-12-28 16:47:19 UTC
+x-github-media-type: github.v3; format=json
+link: <https://api.github.com/enterprises/13827/audit-log?after=MS42NjQzODM5MTkzNDdlKzEyfDM0MkI6NDdBNDo4RTFGMEM6NUIyQkZCMzo2MzM0N0JBRg%3D%3D&before=>; rel="next"
+x-github-api-version-selected: 2022-08-09
+x-ratelimit-limit: 5000
+x-ratelimit-remaining: 4998
+x-ratelimit-reset: 1666023299
+x-ratelimit-used: 2
+x-ratelimit-resource: core
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+access-control-allow-origin: *
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+content-security-policy: default-src 'none'
+vary: Accept-Encoding, Accept, X-Requested-With
+x-github-request-id: C985:4933:1054293:2175681:634D7198
+```
+
+The important part of the output here is the link this link needs to be generated rather than manually imputed. Copy the entire link into the following output and specify the number of pages, in this example I chose 50:
+
+curl -i -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ghp_*****j8fq" https://api.github.com/enterprises/13827/audit-log?after=MS42NjQzODM5MTkzNDdlKzEyfDM0MkI6NDdBNDo4RTFGMEM6NUIyQkZCMzo2MzM0N0JBRg%3D%3D&before=>&per_page=50
+
+This will generate a page with 50 items, but it will also generate a new link in the header that creates the next page of information for you to parse through.
+
+link: <https://api.github.com/enterprises/13827/audit-log?after=MS42NjQzODMzMzk2MzZlKzEyfFdxSzIxdGU0MlBWNUp5UzhBWDF6LWc%3D&before=>; rel="next", <https://api.github.com/enterprises/13827/audit-log?after=&before=>; rel="first", <https://api.github.com/enterprises/13827/audit-log?after=&before=MS42NjQzODM5MTcyMjllKzEyfDI4NDE6NEVFNDoxODBDRkM5OjY5REE0MzI6NjMzNDdCQUQ%3D>; rel="prev"
