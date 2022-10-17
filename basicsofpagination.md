@@ -13,7 +13,7 @@ provides items in sets of 100
 Be sure to read the documentation on how to handle paginated results for specific endpoints.
 
 
-Pagination begins at [header of the request](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api#about-the-response-code-and-headers). The following is an example of an authenticated curl request to view the audit log of our organization:
+Pagination begins at [header of the request](rest/guides/getting-started-with-the-rest-api#about-the-response-code-and-headers). The following is an example of an authenticated curl request to view the audit log of our organization:
 
 ```shell 
 $ curl -I -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ghp_*****j8fq"   https://api.github.com/enterprises/advacado-corp/audit-log
