@@ -2,6 +2,7 @@
 
 To start with, it's important to know a few facts about receiving paginated items:
 
+
 1. Different API calls respond with different defaults. For example, a call to
 [List public repositories](/rest/reference/repos#list-public-repositories)
 provides paginated items in sets of 30, whereas a call to the GitHub Search API
@@ -11,28 +12,64 @@ provides items in sets of 100
 [events](/rest/reference/activity#events) won't let you set a maximum for items to receive.
 Be sure to read the documentation on how to handle paginated results for specific endpoints.
 
-Information about pagination is provided in [the Link header](https://datatracker.ietf.org/doc/html/rfc5988)
-of an API call. For example, let's make a curl request to the search API, to find
-out how many times Mozilla projects use the phrase `addClass`:
 
-```shell
-$ curl -I "https://api.github.com/search/code?q=addClass+user:mozilla"
+Pagination begins at [header of the request](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api#about-the-response-code-and-headers). The following is an example of an authenticated curl request to view the audit log of our organization:
+
+```
+curl -I -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ghp_*****j8fq"   https://api.github.com/enterprises/advacado-corp/audit-log
+
 ```
 
-The `-I` parameter indicates that we only care about the headers, not the actual
-content. In examining the result, you'll notice some information in the Link header
-that looks like this:
+This is a standard HTTP output the `link` section forms the Link Header of the API call. The `-I` parimeter returns only the header information and not the contents.
+
+```
+HTTP/2 200 
+server: GitHub.com
+date: Mon, 17 Oct 2022 15:15:37 GMT
+content-type: application/json; charset=utf-8
+content-length: 20854
+cache-control: private, max-age=60, s-maxage=60
+vary: Accept, Authorization, Cookie, X-GitHub-OTP
+etag: "fc5b15308c775934ca63719ff22d9fe623e7e8226235181203424347cec50130"
+x-oauth-scopes: admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, admin:ssh_signing_key, codespace, delete:packages, delete_repo, gist, notifications, project, repo, user, workflow, write:discussion, write:packages
+x-accepted-oauth-scopes: admin:enterprise
+github-authentication-token-expiration: 2022-12-28 16:47:19 UTC
+x-github-media-type: github.v3; format=json
+link: <https://api.github.com/enterprises/13827/audit-log?after=MS42NjQzODM5MTkzNDdlKzEyfDM0MkI6NDdBNDo4RTFGMEM6NUIyQkZCMzo2MzM0N0JBRg%3D%3D&before=>; rel="next"
+x-github-api-version-selected: 2022-08-09
+x-ratelimit-limit: 5000
+x-ratelimit-remaining: 4998
+x-ratelimit-reset: 1666023299
+x-ratelimit-used: 2
+x-ratelimit-resource: core
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+access-control-allow-origin: *
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+content-security-policy: default-src 'none'
+vary: Accept-Encoding, Accept, X-Requested-With
+x-github-request-id: C985:4933:1054293:2175681:634D7198
+```
+
+In examining the header information, the Link Header of this request is located in this section of the request:
+
+```
+link: <https://api.github.com/enterprises/13827/audit-log?after=MS42NjQzODM5MTkzNDdlKzEyfDM0MkI6NDdBNDo4RTFGMEM6NUIyQkZCMzo2MzM0N0JBRg%3D%3D&before=>; rel="next"
+```
+
+Let's break down this Link Header. The audit log using pagination terms `before` and `after`. These terms will be explained in Navigation Through the Pages. `rel=next` says that the next page is located at `after=MS42NjQzODM5MTkzNDdlKzEyfDM0MkI6NDdBNDo4RTFGMEM6NUIyQkZCMzo2MzM0N0JBRg%3D%3D&before=>`. 
+
+This is an example of a Link Header that uses `page`. Notice that instead of being provided cursor links, you are given page numbers to reference. In this example `rel="next"` shows that the next page is 2 `page=2`, while the last page is 34 `page=34`. This is in contrast to `before` and `after` that do not contain these references. This means that you are on page one,as pagination defaults at the first page,and there are 33 more pages of information in `addClass`.
 
     Link: <https://api.github.com/search/code?q=addClass+user%3Amozilla&page=2>; rel="next",
       <https://api.github.com/search/code?q=addClass+user%3Amozilla&page=34>; rel="last"
 
-Let's break that down. `rel="next"` says that the next page is `page=2`. This makes
-sense, since by default, all paginated queries start at page `1.` `rel="last"`
-provides some more information, stating that the last page of results is on page `34`.
-Thus, we have 33 more pages of information about `addClass` that we can consume.
-Nice!
 
 **Always** rely on these link relations provided to you. Don't try to guess or construct your own URL.
+
 
 ### Navigating through the pages
 
@@ -85,43 +122,10 @@ I am going to provide the following examples for navigation with before and afte
 
 To get the link header for your organization, you need to make an API call. For this example I used:
 
-```
-curl -I -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ghp_*****j8fq"   https://api.github.com/enterprises/advacado-corp/audit-log
-```
+
 
 This provided me with the following output:
 
-```
-HTTP/2 200 
-server: GitHub.com
-date: Mon, 17 Oct 2022 15:15:37 GMT
-content-type: application/json; charset=utf-8
-content-length: 20854
-cache-control: private, max-age=60, s-maxage=60
-vary: Accept, Authorization, Cookie, X-GitHub-OTP
-etag: "fc5b15308c775934ca63719ff22d9fe623e7e8226235181203424347cec50130"
-x-oauth-scopes: admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, admin:ssh_signing_key, codespace, delete:packages, delete_repo, gist, notifications, project, repo, user, workflow, write:discussion, write:packages
-x-accepted-oauth-scopes: admin:enterprise
-github-authentication-token-expiration: 2022-12-28 16:47:19 UTC
-x-github-media-type: github.v3; format=json
-link: <https://api.github.com/enterprises/13827/audit-log?after=MS42NjQzODM5MTkzNDdlKzEyfDM0MkI6NDdBNDo4RTFGMEM6NUIyQkZCMzo2MzM0N0JBRg%3D%3D&before=>; rel="next"
-x-github-api-version-selected: 2022-08-09
-x-ratelimit-limit: 5000
-x-ratelimit-remaining: 4998
-x-ratelimit-reset: 1666023299
-x-ratelimit-used: 2
-x-ratelimit-resource: core
-access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
-access-control-allow-origin: *
-strict-transport-security: max-age=31536000; includeSubdomains; preload
-x-frame-options: deny
-x-content-type-options: nosniff
-x-xss-protection: 0
-referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
-content-security-policy: default-src 'none'
-vary: Accept-Encoding, Accept, X-Requested-With
-x-github-request-id: C985:4933:1054293:2175681:634D7198
-```
 
 The important part of the output here is the link this link needs to be generated rather than manually imputed. Copy the entire link into the following output and specify the number of pages, in this example I chose 50:
 
