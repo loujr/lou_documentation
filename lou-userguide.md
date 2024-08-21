@@ -58,7 +58,7 @@ You can slack me if its something small. If its something large I don't mind a z
 
  
 ### What’s the best way to convince you to do something?
-Start with the ask. Just get it right up front. If you are Slacking me and we have never talked before, don't begin with "Hey lou how are you?". Just come out and say it. Also present a good arguement as to why this course of action is the best and why I should be involved. Also, if you really want to go the extra mile ... the steps and work you have done to reach this conclusion. 
+Start with the ask. Just get it right up front. If you are Slacking me and we have never talked before, don't begin with _"Hey lou how are you?"_. Just come out and say it. Also present a good arguement as to why this course of action is the best and why I should be involved. Also, if you really want to go the extra mile ... the steps and work you have done to reach this conclusion. 
   
 ### How do you like to give feedback?
 I like to write good feedback. I don't mind writing a good review for someone and taking the time to list all the ways I think they have done a good job and hand that off to a superior. I also like telling people they have done a good job whether verbally or in writing. 
