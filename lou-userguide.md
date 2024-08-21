@@ -51,7 +51,7 @@ I ask me how I am doing. Ask me what my thoughts on something are. I am more tha
 ## About my interactions
 
 ### How do you coach people to do their best work and develop their talents?
-Collaboration. I enjoy sitting down with people and walking in their shoes. I am very curious on _what makes you, you_ and thats how I coach people. Everyone has common ground you just need to find it. What works for you might not work for someone else but maybe together you can write a new chapter. I really enjoy naturally curious people who have an eye for details.
+Collaboration. I enjoy sitting down with people and walking in their shoes. I am very curious on _what makes you... you_ and thats how I coach people. Everyone has common ground you just need to find it. What works for you might not work for someone else but maybe together we can write a new chapter. I really enjoy naturally curious people who have an eye for details.
 	
 ### What’s the best way to communicate with you?
 You can slack me if its something small. If its something large I don't mind a zoom. However, if you are going to Zoom me just a quick couple words to put my mind at ease would help. _Hey Lou do you have a moment to discuss API ratelimits?_ works way better than _Hey can we hop on zoom for a moment_. 
