@@ -21,7 +21,7 @@ When people are not flexible. Despite being rather quirky, I am always open to f
 
 ### What are your quirks?
 
-I fidget. I talk a lot. I like to use analogies. I am not afraid to push things for a new perspective and to seek out a different opinion not just if its someone I think will agree with me, but also if I think they will push back. I'd rather have someone I respect tell me "this is not a direction you should go down" than be surrounded by yes men. Also, if I do talk too much or too loudly please just nicely lower your hand when I am in your line of sight. However, also realize that I am often loud because I am excited about the topic we are talking about and want to share the enthusiasm with you. 
+I fidget. I talk a lot. I like to use analogies. I am not afraid to push things for a new perspective and to seek out a different opinion not just if its someone I think will agree with me, but also if I think they will push back. I'd rather have someone I respect tell me _"this is not a direction you should go down"_ than be surrounded by yes men. Also, if I do talk too much or too loudly please just nicely lower your hand when I am in your line of sight. However, also realize that I am often loud because I am excited about the topic we are talking about and want to share the enthusiasm with you. 
 
 
 ### What are some things that people might misunderstand about you that you should clarify?
