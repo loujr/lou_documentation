@@ -26,13 +26,13 @@ I fidget. I talk a lot. I like to use analogies. I am not afraid to push things 
 
 ### What are some things that people might misunderstand about you that you should clarify?
 
-**loud** I have hearing loss, so part of it is I genuinely do not hear the volume of my voice or react to how loud I am becoming. The other part of it is when I get excited I get super loud. Me being loud is often me being passionate. 
+- **loud** I have hearing loss, so part of it is I genuinely do not hear the volume of my voice or react to how loud I am becoming. The other part of it is when I get excited I get super loud. Me being loud is often me being passionate. 
 
-**confrontational** I have strong beliefs, I stick by my beliefs. I don't mind debating and defending my position. I can always separate the person from their ideas. I generally have a philosophy that just because I don't like your ideas does not mean you are a bad person.
+- **confrontational** I have strong beliefs, I stick by my beliefs. I don't mind debating and defending my position. I can always separate the person from their ideas. I generally have a philosophy that just because I don't like your ideas does not mean you are a bad person.
 
-**can't read a room** I have autism. Some social queues I miss. I try to do my best to blend in and _act normal_ but I do have my awkward moments from time to time. I mean well but I am not always able to get the joke the first time around and it stings to be the butt of the joke. 
+- **can't read a room** I have autism. Some social queues I miss. I try to do my best to blend in and _act normal_ but I do have my awkward moments from time to time. I mean well but I am not always able to get the joke the first time around and it stings to be the butt of the joke. 
 
-**obsessive** I love my work. My philosophy is that its okay if you don't love it as much as I do. Just don't dump on me when I am trying. 
+- **obsessive** I love my work. My philosophy is that its okay if you don't love it as much as I do. Just don't dump on me when I am trying. 
 
 ## About my colleagues
 
