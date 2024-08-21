@@ -65,4 +65,4 @@ I like to write good feedback. I don't mind writing a good review for someone an
 
 
 ### How do you like to get feedback?
-As quietly as possible, I just like to be acknowledged. A short cut to my heart is pulling me aside and saying. "Lou I know how hard you are working. I see you did X Y Z and I wanted to thank you for doing a good job." And maybe a little good review come performance review time. I'll feel awkward about it and brush it off like its no big deal but it does mean the world to me whether I'll admit it or not.  
+As quietly as possible, I just like to be acknowledged. A short cut to my heart is pulling me aside and saying. _"Lou I know how hard you are working. I see you did X Y Z and I wanted to thank you for doing a good job."_ And maybe a little good review come performance review time. I'll feel awkward about it and brush it off like its no big deal but it does mean the world to me whether I'll admit it or not.  
