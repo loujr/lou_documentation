@@ -14,7 +14,7 @@ I am passionate and I capital "C" care about my job. I often tell myself that pe
 	
 ### What drives you nuts?
 
-When people are not flexible. Despite being rather quirky, I am always open to finding common ground and solutions to how to solve problems. Being in support, that is basically what I do 100% of my day is solve problems. Not being able to adapt to changing circumstances especially if its not _cannot_ but rather someone is _unwilling_ to do so. Really puts me in a bad head space. 
+When people are not flexible. Despite being rather quirky, I am always open to finding common ground and solutions to how to solve problems. Being in support, that is basically what I do 100% of my day is solving problems. Not being able to adapt to changing circumstances, especially if its not _cannot_ but rather someone is _unwilling_ to do so, really puts me in a bad head space. 
 
 ... but above all, I really really do not like being talked down to. That gets deep under my skin. 
 
