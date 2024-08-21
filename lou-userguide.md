@@ -41,7 +41,7 @@ I really like caring and compassionate people who capital "C" care for their job
 
 
 ### What do you wish colleagues didn’t do?
-I don't like people who are in my space and do not respect my boundaries. I don't mind joking around and there's few things that really sting but feeling excluded or isolated from a larger group is something that doesn't put me in a good headspace. If I find out that you have been dishonest, I will distance myself immeadiately. 
+I don't like people who are in my space and do not respect my boundaries. I don't mind joking around and there's few things that really sting but feeling excluded or isolated from a larger group is something that doesn't put me in a good headspace. If I find out that you have been dishonest, I will distance myself immediately. 
 
  
 ### How can people earn an extra gold star with you?
@@ -51,16 +51,18 @@ I ask me how I am doing. Ask me what my thoughts on something are. I am more tha
 ## About my interactions
 
 ### How do you coach people to do their best work and develop their talents?
-* *Tell us how you like to help others.*
+Collaboration. I enjoy sitting down with people and walking in their shoes. I am very curious on _what makes you, you_ and thats how I coach people. Everyone has common ground you just need to find it. What works for you might not work for someone else but maybe together you can write a new chapter. I really enjoy naturally curious people who have an eye for details.
 	
 ### What’s the best way to communicate with you?
-* *If you hate emails, tell us. If you prefer a quick zoom over a 15 min write up, tell us.*
-	
+You can slack me if its something small. If its something large I don't mind a zoom. However, if you are going to Zoom me just a quick couple words to put my mind at ease would help. _Hey Lou do you have a moment to discuss API ratelimits?_ works way better than _Hey can we hop on zoom for a moment_. 
+
+ 
 ### What’s the best way to convince you to do something?
-* *Tell us how we can change your mind, once it’s made up.*
-	 
+Start with the ask. Just get it right up front. If you are Slacking me and we have never talked before, don't begin with "Hey lou how are you?". Just come out and say it. Also present a good arguement as to why this course of action is the best and why I should be involved. Also, if you really want to go the extra mile ... the steps and work you have done to reach this conclusion. 
+  
 ### How do you like to give feedback?
-* *Tell us the modes, means, timing, approach, and level of detail you like to employ when giving feedback, and why that's so.*
+I like to write good feedback. I don't mind writing a good review for someone and taking the time to list all the ways I think they have done a good job and hand that off to a superior. I also like telling people they have done a good job whether verbally or in writing. 
+
 
 ### How do you like to get feedback?
-* *Tell us the modes, means, timing, approach, and level of detail you like to see others employ when giving you feedback, and why that's so.*
+As quietly as possible, I just like to be acknowledged. A short cut to my heart is pulling me aside and saying. "Lou I know how hard you are working. I see you did X Y Z and I wanted to thank you for doing a good job." And maybe a little good review come performance review time. I'll feel awkward about it and brush it off like its no big deal but it does mean the world to me whether I'll admit it or not.  
