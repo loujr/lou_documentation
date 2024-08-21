@@ -37,13 +37,16 @@ I fidget. I talk a lot. I like to use analogies. I am not afraid to push things 
 ## About my colleagues
 
 ### What qualities do you particularly value in your colleagues?
-* *Tell us what your ideal colleague would look like. These are the people you normally seek out at work.* 
+I really like caring and compassionate people who capital "C" care for their jobs. It doesn't have to be an obession like mine but just striving to improve is such a vibe for me. I like loyal people who tell me like it is without sugar coating. Another big thing for me is collaboration. I like to think we are all in this together and strive to provide the same experience for those around me.
+
 
 ### What do you wish colleagues didn’t do?
-* *Think of the people you avoid at work. What are their characteristics?*
-	
+I don't like people who are in my space and do not respect my boundaries. I don't mind joking around and there's few things that really sting but feeling excluded or isolated from a larger group is something that doesn't put me in a good headspace. If I find out that you have been dishonest, I will distance myself immeadiately. 
+
+ 
 ### How can people earn an extra gold star with you?
-* *Think of the time when a colleague puts a smile on your face. What did they just do?*
+I ask me how I am doing. Ask me what my thoughts on something are. I am more than happy to put together action items or process improvements. But really, just a little bit of kindness goes a long way. Seeing people genuinely enjoy the help I have provided them is something that really gives me the warm fuzzies. 
+
 
 ## About my interactions
 
